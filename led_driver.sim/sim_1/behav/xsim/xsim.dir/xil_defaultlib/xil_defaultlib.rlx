@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 13 2023
+20:21:30
+/home/pawel24pl/Dokumenty/Notatki/Systemy wbudowane/Projekt Vivado/led_driver/led_driver.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,uvm,,,,,,
+/home/pawel24pl/Dokumenty/Notatki/Systemy wbudowane/Projekt Vivado/led_driver/led_driver.srcs/sim_1/new/tb_led_driver.sv,1704109263,systemVerilog,,,,tb_led_driver,,uvm,,,,,,
+/home/pawel24pl/Dokumenty/Notatki/Systemy wbudowane/Projekt Vivado/led_driver/led_driver.srcs/sources_1/new/led_driver.sv,1704108738,systemVerilog,,/home/pawel24pl/Dokumenty/Notatki/Systemy wbudowane/Projekt Vivado/led_driver/led_driver.srcs/sources_1/new/pwm_driver.sv,,led_driver,,uvm,,,,,,
+/home/pawel24pl/Dokumenty/Notatki/Systemy wbudowane/Projekt Vivado/led_driver/led_driver.srcs/sources_1/new/pwm_driver.sv,1704108886,systemVerilog,,/home/pawel24pl/Dokumenty/Notatki/Systemy wbudowane/Projekt Vivado/led_driver/led_driver.srcs/sim_1/new/tb_led_driver.sv,,pwm_driver,,uvm,,,,,,

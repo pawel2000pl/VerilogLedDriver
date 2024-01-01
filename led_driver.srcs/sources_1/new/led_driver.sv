@@ -1,15 +1,16 @@
 `timescale 1ns / 1ps
 
-
 module led_driver #(parameter R=10) (
         input logic clk,
-        input logic[0:R-1] value,
+        input logic[R-1:0] value,
         output logic out,
         input logic reset
     );
     
-    logic[0:R-1] counter;
-    wire[0:R-1] driver;
+    logic[R-1:0] counter;
+    wire[R-1:0] driver;
+    wire[R-1:0] next_counter;
+    assign next_counter = counter + 1;
     
     genvar i;  
     generate
@@ -18,10 +19,10 @@ module led_driver #(parameter R=10) (
         end
     endgenerate
     
-    always_ff @(posedge clk) 
+    always @(posedge clk) 
     begin
-        counter <= reset ? 0 : counter + 1;           
-        out <= ((~counter) & (counter+1) & driver) != 0;           
+        counter <= (reset || &next_counter) ? 0 : next_counter;           
+        out <= |((~counter) & next_counter & driver);           
     end
     
 endmodule
